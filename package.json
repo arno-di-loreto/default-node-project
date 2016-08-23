@@ -1,0 +1,25 @@
+{
+  "name": "default-node-project",
+  "version": "1.0.0",
+  "description": "A simple node project",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "install": "rm -rf .git; git init; npm install --save-dev chai mocha istanbul",
+    "test": "mocha",
+    "coverage": "istanbul cover --print both _mocha -- -R spec",
+    "start": "node index.js"
+  },
+  "author": {
+    "name": "Arnaud Lauret",
+    "url": "http://apihandyman.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arno-di-loreto/default-node-project.git"
+  }
+}
